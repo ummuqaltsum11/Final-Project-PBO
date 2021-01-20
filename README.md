@@ -1,6 +1,6 @@
 # Sistem Penjualan Toko Buku
 
-## Sistem ini menyediakan pelayanan untuk 
+## Sistem ini menyediakan pelayanan untuk melakukan kegiatan transaksi jual-beli pada toko buku
 
 ### Class Diagram
 
