@@ -40,5 +40,5 @@ Terdapat empat buah entitas pada diagram ini, yaitu Customer, Barang, Cash, dan 
 3. Entitas Cash memiliki sebuah atribut yaitu "tgl_pembayaran" yang bertipe data date
 4. Entitas Credit memiliki sebuah atribut yaitu "Contact" yang bertipe data string
 
-Hubungan atau relasi antara entitas Customer dengan Barang adalah tepat satu ke banyak (one to many).
-Hubungan atau relasi antara entitas Cash dan Credit dengan Customer adalah satu ke satu (one to one), dimana relasi ini berupa pilihan bagi pengguna untuk memilih menggunakan Cash/Credit atau tidak.
+Hubungan atau relasi antara entitas Customer dengan Barang adalah tepat satu ke banyak (one to many), artinya setiap seorang Customer dapat membeli (memiliki) satu atau lebih Barang yang dijual oleh toko.
+Hubungan atau relasi antara entitas Cash dan Credit dengan Customer adalah satu ke satu (one to one), dimana relasi ini berupa pilihan bagi pengguna untuk memilih melakukan pembayaran menggunakan Cash/Credit atau tidak.
