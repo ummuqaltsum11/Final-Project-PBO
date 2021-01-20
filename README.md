@@ -52,17 +52,17 @@ dimana relasi ini berupa pilihan bagi pengguna untuk memilih melakukan pembayara
 Pada desain diagram ini sama seperti diagram-diagram sebelumnya, hanya saja ada beberapa tambahan entitas,
 yaitu: DataModelTokoBuku, FormCustomerController, DBConnection, dan FormCustomer
 
+Pada entitas Customer terdapat penambahan method, yaitu: getIDcustomer(), getNama(), dangetAlamat()
+
 1. Entitas DataModelTokoBuku memiliki atribut "Connection conn"
     Juga beberapa memiliki method: addCustomer(), addBarang(), getCash(), getCredit(), dan nextIDcustomer()
 
 2. Entitas FormCustomerController memiliki beberapa method yang berperan sebagai cotroller:
     - initialize()
-    - handleButtonAddBarang()
-    - handleButtonAddCustomer()
-    - loadDataCash()
-    - loadDataCredit()
-    - loadDataBarang()
-    - handleClearForm()
+    - handleAddCustomerButton(ActionEvent event)
+    - handleClearFormButton(ActionEvent event)
+    - handleReloadButton(ActionEvent event)
+    - initialize(URL url, ResourceBundle rb)
 
 3. Entitas DBConnection memiliki sebuah atribut:
     - "USERNAME" bertipe data string
