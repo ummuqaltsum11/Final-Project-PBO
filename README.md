@@ -17,3 +17,6 @@ Terdapat empat buah entitas pada diagram ini, yaitu Customer, Barang, Cash, dan 
 
 3. Entitas Cash memiliki sebuah atribut yaitu "tgl_pembayaran" yang bertipe data string
 4. Entitas Credit memiliki sebuah atribut yaitu "Contact" yang bertipe data string
+
+Hubungan atau relasi antara entitas Customer dengan Barang adalah aggregation.
+Hubungan atau relasi antara entitas Cash dan Credit dengan Customer adalah association.
