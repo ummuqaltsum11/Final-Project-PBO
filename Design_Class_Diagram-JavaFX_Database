@@ -1,0 +1,58 @@
+classDiagram
+    Customer <|-- Cash
+    Customer <|-- Credit
+    Customer "1"--o"*" Barang : 
+    Barang o-- DataModelTokoBuku : Data Modeling
+    DataModelTokoBuku <-- FormCustomerController : Data Control
+    DataModelTokoBuku --> DBConnection : DB Connection
+    FormCustomerController <.. FormCustomer : Form Control      
+
+    class Customer{
+      <<abstract>>
+      #IntegerProperty IDcustomer
+      #StringProperty nama
+      #StringProperty alamat
+      
+      +IntegerProperty nextID()
+    }
+    
+    class Cash{
+      -DateProperty tgl_pembayaran
+    }
+    class Credit{
+      -StringProperty contact
+    }
+    class Barang{
+      -StringProperty jenisBuku
+      -doubleProperty hargaBuku
+      +String getJenisBuku()
+      +double getHargaBuku()
+    }
+
+    class DataModelTokoBuku{
+        Connection conn
+        addCustomer()
+        addBarang()
+        getCash()
+        getCredit()
+        nextIDcustomer()
+    }
+
+    class FormCustomerController{
+        initialize()
+        handleButtonAddBarang()
+        handleButtonAddCustomer()
+        loadDataCash()
+        loadDataCredit()
+        loadDataBarang()
+        handleClearForm()
+    }
+    class DBConnection{
+        - String USERNAME
+        - String PASSWORD
+        - String DB
+        getConnection()
+        getConnection(String driver)
+        createTable();
+    }
+            
