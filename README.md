@@ -24,7 +24,7 @@ Hubungan atau relasi antara entitas Customer dengan Barang adalah aggregation,
 dengan ketentuan setiap satu Customer dapat memiliki banyak Barang.
 Hubungan atau relasi antara entitas Cash dan Credit dengan Customer adalah inheritance.
 
-
+###
 ### Entity Reationship Diagram
 
 Terdapat empat buah entitas pada diagram ini, yaitu: Customer, Barang, Cash, dan Credit
@@ -46,7 +46,7 @@ artinya setiap seorang Customer dapat membeli (memiliki) satu atau lebih Barang 
 Hubungan atau relasi antara entitas Cash dan Credit dengan Customer adalah satu ke satu (one to one),
 dimana relasi ini berupa pilihan bagi pengguna untuk memilih melakukan pembayaran menggunakan Cash/Credit atau tidak.
 
-
+###
 ### Design Class Diagram for JavaFX and Database
 
 Pada desain diagram ini sama seperti diagram-diagram sebelumnya, hanya saja ada beberapa tambahan entitas,
@@ -72,7 +72,11 @@ yaitu: DataModelTokoBuku, FormCustomerController, DBConnection, dan FormCustomer
 
 4. Entitas FormCustomer 
 
-Hubungan atau relasi antara entitas DataModelTokoBuku dengan Customer adalah aggregation,
-artinya setiap seorang Customer dapat membeli (memiliki) satu atau lebih Barang yang dijual oleh toko.
-Hubungan atau relasi antara entitas Cash dan Credit dengan Customer adalah satu ke satu (one to one),
-dimana relasi ini berupa pilihan bagi pengguna untuk memilih melakukan pembayaran menggunakan Cash/Credit atau tidak.
+Hubungan atau relasi antara entitas DataModelTokoBuku dengan Customer adalah aggregation, 
+yang berarti toko buku memiliki pelanggan yang berinteraksi dengan sistem pada toko buku.
+Hubungan atau relasi antara entitas FormCustomerController dengan DataModelTokoBuku adalah association,
+relasi ini memiliki arti bahwa FormCustomerController merupakan bagian dari DataModelTokoBuku yang berperan dalam data control.
+Hubungan atau relasi antara entitas DataModelTokoBuku dengan DBConnection adalah association,
+relasi ini memiliki arti supaya dapat mengakses DataModelTokoBuku maka dilakukan interaksi dengan DBConnection terlebih dahulu.
+Hubungan atau relasi antara entitas FormCustomer dengan FormCustomerController adalah dependency, 
+dimana pengoperasian dari FormCustomer bergantung pada FormCustomerController.
