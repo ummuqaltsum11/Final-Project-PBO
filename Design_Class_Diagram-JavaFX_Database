@@ -12,16 +12,21 @@ classDiagram
       #IntegerProperty IDcustomer
       #StringProperty nama
       #StringProperty alamat
+      getIDcustomer()
+      getNama()
+      getAlamat()
       
-      +IntegerProperty nextID()
     }
     
     class Cash{
       -DateProperty tgl_pembayaran
     }
+    
     class Credit{
       -StringProperty contact
+      
     }
+    
     class Barang{
       -StringProperty jenisBuku
       -doubleProperty hargaBuku
@@ -31,22 +36,21 @@ classDiagram
 
     class DataModelTokoBuku{
         Connection conn
-        addCustomer()
-        addBarang()
-        getCash()
-        getCredit()
+        addTokoBuku()
+        getCashs()
+        getCredits()
+        getnBarang()
         nextIDcustomer()
     }
 
     class FormCustomerController{
         initialize()
-        handleButtonAddBarang()
-        handleButtonAddCustomer()
-        loadDataCash()
-        loadDataCredit()
-        loadDataBarang()
-        handleClearForm()
+        handleAddCustomerButton(ActionEvent event)
+        handleClearFormButton(ActionEvent event)
+        handleReloadButton(ActionEvent event)
+        initialize(URL url, ResourceBundle rb)
     }
+    
     class DBConnection{
         - String USERNAME
         - String PASSWORD
