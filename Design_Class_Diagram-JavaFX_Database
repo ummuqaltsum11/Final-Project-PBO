@@ -2,7 +2,7 @@ classDiagram
     Customer <|-- Cash
     Customer <|-- Credit
     Customer "1"o--"*" Barang : 
-    Customer --o DataModelTokoBuku : Data Modeling
+    Customer --o DataModelTokoBuku : 
     DataModelTokoBuku <-- FormCustomerController : Data Control
     DataModelTokoBuku --> DBConnection : DB Connection
     FormCustomerController <.. FormCustomer : Form Control      
