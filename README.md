@@ -1,122 +1,22 @@
-# Sistem Penjualan Toko Buku
+# Penjelasan Program
 
-## Sistem ini menyediakan pelayanan untuk 
+## Penjelasan Class Diagram
 
-### Class Diagram
+Terdapat empat buah entitas pada diagram ini, yaitu Customer, Barang, Cash, dan Credit
 
-```mermaid
-classDiagram
-    Customer <|-- Cash
-    Customer <|-- Credit
-    Customer "1"--o"*" Barang : has
-    
-    class Customer{
-      <<abstract>>
-      #int IDcustomer
-      #String nama
-      #String alamat
-      +int nextIDcustomer()
-    }
-    
-    class Cash{
-      -Date tgl_pembayaran
-    }
-    class Credit{
-      -String contact
-    }
-    class Barang{
-      -String jenisBuku
-      -double hargaBuku
-      +String getJenisBuku()
-      +double getHargaBuku()
-    }
-            
-```
+1. Entitas Customer memiliki beberepa atribut:
+    - "IDcustomer" yang bertipe data integer sebagai Primary Key
+    - "nama" dengan tipe data string
+    - "alamat" dengan tipe data string
+    Juga memiliki method "nextIDcustomer" bertipe data integer
 
-### ER Diagram
+2. Entitas Barang memiliki beberepa atribut:
+    - "jenisBuku" yang bertipe data string
+    - "hargaBuku" dengan tipe data double
+    Juga memiliki method "getJenisBuku" dan "getHargaBuku" dengan masing-masing tipe data menyesuaikan tipe variabelnya
 
-```mermaid
-erDiagram
-          CUSTOMER ||..|| CASH : is
-          CUSTOMER ||--|| CREDIT : is
-          CUSTOMER ||--|{ BARANG: "has"
-          CUSTOMER {
-            int IDcustomer
-            string nama
-            string alamat
-          }
-          CASH{
-            string tgl_pembayaran
-          }
-          CREDIT{
-            string contact
-          }
-          BARANG{
-            string jenisBuku
-            double hargaBuku
-          }
-```
-### Design Class Diagram for JavaFX and Database
-```mermaid
-classDiagram
-    Customer <|-- Cash
-    Customer <|-- Credit
-    Customer "1"--o"*" Barang : has
-    Customer o-- DataModelTokoBuku : Data Modeling
-    DataModelTokoBuku <-- FormCustomerController : Data Control
-    DataModelTokoBuku --> DBConnection : DB Connection
-    DataModelTokoBuku <.. FormCustomer : Form Control      
+3. Entitas Cash memiliki sebuah atribut yaitu "tgl_pembayaran" yang bertipe data string
+4. Entitas Credit memiliki sebuah atribut yaitu "Contact" yang bertipe data string
 
-    class Customer{
-      <<abstract>>
-      #IntegerProperty IDcustomer
-      #StringProperty nama
-      #StringProperty alamat
-      
-      +IntegerProperty nextID()
-    }
-    
-    class Cash{
-      -StringProperty tgl_pembayaran
-    }
-    class Credit{
-      -StringProperty contact
-    }
-    class Barang{
-      -StringProperty jenisBuku
-      -DoubleProperty hargaBuku
-      +String getJenisBuku()
-      +double getHargaBuku()
-    }
-
-    class DataModelTokoBuku{
-        Connection conn
-        addTokoBuku(Cash customer)
-        addTokoBuku(Credit customer)
-        getCashs()
-        getCredits()
-        nextIDcustomer()
-    }
-
-    class FormCustomerController{
-        initialize()
-        handleAddBarangButton(ActionEvent event)
-        handleAddCustomerButton(ActionEvent event)
-        handleClearFormButton(ActionEvent event)
-        handleReloadButton(ActionEvent event)
-        initialize(URL location, ResourceBundle resources)
-        
-    }
-    
-    class DBConnection{
-        - String USERNAME
-        - String PASSWORD
-        - String DB
-        - String MYCONN
-        - String SQCONN
-        getConnection()
-        getConnection(String driver)
-        createTable();
-    }
-            
-```
+Hubungan atau relasi antara entitas Customer dengan Barang adalah aggregation dengan ketentuan setiap satu Customer dapat memiliki banyak Barang.
+Hubungan atau relasi antara entitas Cash dan Credit dengan Customer adalah association.
