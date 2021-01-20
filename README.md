@@ -19,4 +19,4 @@ Terdapat empat buah entitas pada diagram ini, yaitu Customer, Barang, Cash, dan 
 4. Entitas Credit memiliki sebuah atribut yaitu "Contact" yang bertipe data string
 
 Hubungan atau relasi antara entitas Customer dengan Barang adalah aggregation dengan ketentuan setiap satu Customer dapat memiliki banyak Barang.
-Hubungan atau relasi antara entitas Cash dan Credit dengan Customer adalah association.
+Hubungan atau relasi antara entitas Cash dan Credit dengan Customer adalah inheritance.
