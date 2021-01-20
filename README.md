@@ -19,7 +19,7 @@ classDiagram
     }
     
     class Cash{
-      -String tgl_pembayaran
+      -Date tgl_pembayaran
     }
     class Credit{
       -String contact
