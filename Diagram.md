@@ -38,7 +38,7 @@ classDiagram
 ```mermaid
 erDiagram
           CUSTOMER ||..|| CASH : is
-          CUSTOMER ||--|| CREDIT : is
+          CUSTOMER ||..|| CREDIT : is
           CUSTOMER ||--|{ BARANG: "has"
           CUSTOMER {
             int IDcustomer
