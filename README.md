@@ -1,6 +1,8 @@
-# Penjelasan Program
+# Penjelasan Program Sistem Penjualan Toko Buku "SHEENA"
 
-## Penjelasan Class Diagram
+## Sistem ini menyediakan pelayanan untuk melakukan kegiatan transaksi jual-beli pada toko buku
+
+### Class Diagram
 
 Terdapat empat buah entitas pada diagram ini, yaitu Customer, Barang, Cash, dan Credit
 
