@@ -1,5 +1,7 @@
 # Sistem Penjualan Toko Buku
 
+## Sistem ini menyediakan pelayanan untuk 
+
 ### Class Diagram
 
 ```mermaid
