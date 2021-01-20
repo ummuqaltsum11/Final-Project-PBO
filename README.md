@@ -1,4 +1,4 @@
-# Sistem Penjualan Toko Buku
+# Sistem Penjualan Toko Buku "SHEENA"
 
 ## Sistem ini menyediakan pelayanan untuk melakukan kegiatan transaksi jual-beli pada toko buku
 
