@@ -2,6 +2,11 @@
 
 ## Sistem ini menyediakan pelayanan untuk melakukan kegiatan transaksi jual-beli pada toko buku
 
+Nama Anggota :
+- Maghviraturreimadhiney 1917051021 (Membuat Diagram)
+- M. Faishal Athallah 1917051072 (Mendesain GUI)
+- Ummu Qaltsum 1917051008 (Menulis Program)
+
 ### Class Diagram
 
 Terdapat empat buah entitas pada diagram ini, yaitu: Customer, Barang, Cash, dan Credit
