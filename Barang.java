@@ -1,4 +1,3 @@
-
 package TokoBuku;
 
 import javafx.beans.property.DoubleProperty;
@@ -30,7 +29,6 @@ public class Barang {
   public void setHargaBuku(double hargaBuku){
     this.hargaBuku.set(hargaBuku);
   }
-  
   
   public StringProperty jenisBukuProperty(){
     return jenisBuku;
