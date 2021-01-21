@@ -1,13 +1,12 @@
-# Penjelasan Program Sistem Penjualan Toko Buku "SHEENA"
-
+# Penjelasan Aplikasi Sistem Penjualan Toko Buku "SHEENA"
 ## Sistem ini menyediakan pelayanan untuk melakukan kegiatan transaksi jual-beli pada toko buku
 
-Nama Anggota :
-- Maghviraturreimadhiney 1917051021 (Membuat Diagram)
-- M. Faishal Athallah 1917051072 (Mendesain GUI)
+# Nama Anggota :
 - Ummu Qaltsum 1917051008 (Menulis Program)
+- Maghviraturreimadhiney 1917051021 (Mendesain Diagram)
+- Muhammad Faishal Athallah 1917051072 (Mendesain GUI)
 
-### Class Diagram
+# Class Diagram
 
 Terdapat empat buah entitas pada diagram ini, yaitu: Customer, Barang, Cash, dan Credit
 
@@ -30,7 +29,7 @@ dengan ketentuan setiap satu Customer dapat memiliki banyak Barang.
 Hubungan atau relasi antara entitas Cash dan Credit dengan Customer adalah inheritance.
 
 ###
-### Entity Reationship Diagram
+# Entity Reationship Diagram
 
 Terdapat empat buah entitas pada diagram ini, yaitu: Customer, Barang, Cash, dan Credit
 
@@ -52,7 +51,7 @@ Hubungan atau relasi antara entitas Cash dan Credit dengan Customer adalah satu 
 dimana relasi ini berupa pilihan bagi pengguna untuk memilih melakukan pembayaran menggunakan Cash/Credit atau tidak.
 
 ###
-### Design Class Diagram for JavaFX and Database
+# Design Class Diagram for JavaFX and Database
 
 Pada desain diagram ini sama seperti diagram-diagram sebelumnya, hanya saja ada beberapa tambahan entitas,
 yaitu: DataModelTokoBuku, FormCustomerController, DBConnection, dan FormCustomer
