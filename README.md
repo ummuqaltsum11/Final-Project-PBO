@@ -16,29 +16,28 @@
         Customer "1"--o"*" Barang : has
     
         class Customer{
-            <<abstract>>
-            #int IDcustomer
-            -String nama
-            -String alamat
-            +int nextIDcustomer()
+          <<abstract>>
+          #int IDcustomer
+          -String nama
+          -String alamat
+          +int nextIDcustomer()
         }
         
         class Cash{
-            -Date tgl_pembayaran
+          -Date tgl_pembayaran
         }
         
         class Credit{
-            -String contact
+          -String contact
         }
         
         class Barang{
-            -String jenisBuku
-            -double hargaBuku
-            +String getJenisBuku()
-            +double getHargaBuku()
+          -String jenisBuku
+          -double hargaBuku
+          +String getJenisBuku()
+          +double getHargaBuku()
         }
 ```
-
 Terdapat empat buah entitas pada diagram ini, yaitu: Customer, Barang, Cash, dan Credit
 
 1. Entitas Customer memiliki beberepa atribut:
