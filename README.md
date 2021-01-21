@@ -11,7 +11,7 @@
 classDiagram
     Customer <|-- Cash
     Customer <|-- Credit
-    Customer "1"o--"*" Barang : 
+    Customer "1"--o"*" Barang : has
     
     class Customer{
       <<abstract>>
