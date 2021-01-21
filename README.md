@@ -8,31 +8,30 @@
 
 # Class Diagram
 
-classDiagram
-    Customer <|-- Cash
-    Customer <|-- Credit
-    Customer "1"--o"*" Barang : has
+    classDiagram
+        Customer <|-- Cash
+        Customer <|-- Credit
+        Customer "1"--o"*" Barang : has
     
-    class Customer{
-      <<abstract>>
-      #int IDcustomer
-      -String nama
-      -String alamat
-      +int nextIDcustomer()
-    }
-    
-    class Cash{
-      -Date tgl_pembayaran
-    }
-    class Credit{
-      -String contact
-    }
-    class Barang{
-      -String jenisBuku
-      -double hargaBuku
-      +String getJenisBuku()
-      +double getHargaBuku()
-    }
+        class Customer{
+          <<abstract>>
+          #int IDcustomer
+          -String nama
+          -String alamat
+          +int nextIDcustomer()
+        }
+        class Cash{
+          -Date tgl_pembayaran
+        }
+        class Credit{
+          -String contact
+        }
+        class Barang{
+          -String jenisBuku
+          -double hargaBuku
+          +String getJenisBuku()
+          +double getHargaBuku()
+        }
 
 Terdapat empat buah entitas pada diagram ini, yaitu: Customer, Barang, Cash, dan Credit
 
