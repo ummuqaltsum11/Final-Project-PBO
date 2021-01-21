@@ -78,15 +78,17 @@ public class DataModelTokoBuku {
             + "ORDER BY nama";
     try {
       ResultSet rs = conn.createStatement().executeQuery(sql);
-      String sqlBarang = "SELECT jenisBuku, hargaBuku "
-              + "FROM barang WHERE IDcustomer"+ rs.getInt(1);
-      ResultSet rsBarang = conn.createStatement().executeQuery(sqlBarang);
-      ArrayList<Barang> dataBarang = new ArrayList<>();
-      while (rsBarang.next()){
-        dataBarang.add(new Barang(rsBarang.getString(1),rsBarang.getDouble(2)));
+      while (rs.next()){
+        String sqlBarang = "SELECT jenisBuku, hargaBuku "
+              + "FROM barang WHERE IDcustomer="+ rs.getInt(1);
+        ResultSet rsBarang = conn.createStatement().executeQuery(sqlBarang);
+        ArrayList<Barang> dataBarang = new ArrayList<>();
+        while (rsBarang.next()){
+          dataBarang.add(new Barang(rsBarang.getString(1),rsBarang.getDouble(2)));
       }
       data.add(new Cash(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4), dataBarang));
-    } catch (SQLException ex) {
+      }
+    }catch (SQLException ex) {
       Logger.getLogger(DataModelTokoBuku.class.getName()).log(Level.SEVERE, null, ex);
     }
     return data;
@@ -99,14 +101,16 @@ public class DataModelTokoBuku {
             + "ORDER BY nama";
     try {
       ResultSet rs = conn.createStatement().executeQuery(sql);
-      String sqlBarang = "SELECT jenisBuku, hargaBuku "
-              + "FROM barang WHERE IDcustomer" + rs.getInt(1);
-      ResultSet rsBarang = conn.createStatement().executeQuery(sqlBarang);
-      ArrayList<Barang> dataBarang = new ArrayList<>();
-      while (rsBarang.next()) {
-        dataBarang.add(new Barang(rsBarang.getString(1), rsBarang.getDouble(2)));
+      while (rs.next()){
+        String sqlBarang = "SELECT jenisBuku, hargaBuku "
+              + "FROM barang WHERE IDcustomer=" + rs.getInt(1);
+        ResultSet rsBarang = conn.createStatement().executeQuery(sqlBarang);
+        ArrayList<Barang> dataBarang = new ArrayList<>();
+        while (rsBarang.next()) {
+          dataBarang.add(new Barang(rsBarang.getString(1), rsBarang.getDouble(2)));
       }
       data.add(new Credit(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getString(4), dataBarang));
+      }
     } catch (SQLException ex) {
       Logger.getLogger(DataModelTokoBuku.class.getName()).log(Level.SEVERE, null, ex);
     }
@@ -116,7 +120,7 @@ public class DataModelTokoBuku {
   public ObservableList<Barang> getnBarang(int IDcustomer){
     ObservableList<Barang> data = FXCollections.observableArrayList();
     String sql = "SELECT jenisBuku, hargaBuku "
-              + "FROM barang WHERE IDcustomer" + IDcustomer;
+              + "FROM barang WHERE IDcustomer=" + IDcustomer;
     try {
       ResultSet rs = conn.createStatement().executeQuery(sql);
       while (rs.next()){
@@ -132,9 +136,9 @@ public class DataModelTokoBuku {
     String sql = "SELECT MAX(IDcustomer) FROM customer";
     ResultSet rs = conn.createStatement().executeQuery(sql);
     while (rs.next()){
-      return rs.getInt(1)==0?100000:rs.getInt(1)+1;
+      return rs.getInt(1)==0?1000001:rs.getInt(1)+1;
     }
-    return 100000;
+    return 1000001;
   }
 
 }
