@@ -1,4 +1,3 @@
-
 package TokoBuku;
 
 import java.util.ArrayList;
@@ -31,5 +30,7 @@ public class Cash extends Customer {
   public StringProperty getTgl_pembayaranProperty() {
     return tgl_pembayaran;
   }
+  
+  
   
 }
