@@ -83,6 +83,70 @@ dimana relasi ini berupa pilihan bagi pengguna untuk memilih melakukan pembayara
 ###
 ### Design Class Diagram for JavaFX and Database
 
+```mermaid
+classDiagram
+    Customer <|-- Cash
+    Customer <|-- Credit
+    Customer "1"o--"*" Barang : 
+    Customer --o DataModelTokoBuku : 
+    DataModelTokoBuku <-- FormCustomerController : Data Control
+    DataModelTokoBuku --> DBConnection : DB Connection
+    FormCustomerController <.. FormCustomer : Form Control      
+
+    class Customer{
+      <<abstract>>
+      #IntegerProperty IDcustomer
+      #StringProperty nama
+      #StringProperty alamat
+      getIDcustomer()
+      getNama()
+      getAlamat()
+      
+    }
+    
+    class Cash{
+      -DateProperty tgl_pembayaran
+    }
+    
+    class Credit{
+      -StringProperty contact
+      
+    }
+    
+    class Barang{
+      -StringProperty jenisBuku
+      -doubleProperty hargaBuku
+      +String getJenisBuku()
+      +double getHargaBuku()
+    }
+
+    class DataModelTokoBuku{
+        Connection conn
+        addTokoBuku()
+        getCashs()
+        getCredits()
+        getnBarang()
+        nextIDcustomer()
+    }
+
+    class FormCustomerController{
+        initialize()
+        handleAddCustomerButton(ActionEvent event)
+        handleClearFormButton(ActionEvent event)
+        handleReloadButton(ActionEvent event)
+        initialize(URL url, ResourceBundle rb)
+    }
+    
+    class DBConnection{
+        - String USERNAME
+        - String PASSWORD
+        - String DB
+        getConnection()
+        getConnection(String driver)
+        createTable();
+    }
+```
+
 Pada desain diagram ini sama seperti diagram-diagram sebelumnya, hanya saja ada beberapa tambahan entitas,
 yaitu: DataModelTokoBuku, FormCustomerController, DBConnection, dan FormCustomer
 
