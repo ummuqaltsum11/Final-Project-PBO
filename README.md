@@ -1,4 +1,5 @@
 # Penjelasan Aplikasi Sistem Penjualan Toko Buku "SHEENA"
+![Aplikasi](https://user-images.githubusercontent.com/62341995/105652448-d9d6f180-5eeb-11eb-9c56-56ade7fb36a3.PNG)
 ## Sistem ini menyediakan pelayanan untuk melakukan kegiatan transaksi jual-beli pada toko buku
 
 ## Nama Anggota :
