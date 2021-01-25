@@ -1,6 +1,6 @@
 # Penjelasan Aplikasi Sistem Penjualan Toko Buku "SHEENA"
 ![Aplikasi](https://user-images.githubusercontent.com/62341995/105652448-d9d6f180-5eeb-11eb-9c56-56ade7fb36a3.PNG)
-## Aplikasi ini menyediakan pelayanan untuk melakukan kegiatan transaksi jual-beli pada toko buku
+### Aplikasi ini menyediakan pelayanan untuk melakukan kegiatan transaksi jual-beli pada toko buku
 Aplikasi ini juga dapat menjadi bukti pembelian, karena data dari transaksi yang telah dilakukan akan disimpan ke dalam database toko.
 Pada Form pengisian data customer, terdapat 5 kolom yang harus diisi, yaitu nama, alamat, tanggal pembayaran, jenis buku, dan harga buku yang dibeli.
 Sedangkan, ID customer akan terinisialisasi secara otomatis. ID Customer dapat diperoleh dengan mendaftarkan diri sebagai member atau keanggotaan dari toko buku "Sheena".
@@ -16,7 +16,7 @@ lalu akan muncul ID pelanggan tersebut di kolom pengisian bagian kanan bawah, ka
 Kemudian data tersebut akan muncul pada tabel di bagian tengah bawah.
 
 ###
-## Nama Anggota :
+### Nama Anggota :
 - Ummu Qaltsum 1917051008 (Menulis Program)
 - Maghviraturreimadhiney 1917051021 (Mendesain Diagram)
 - Muhammad Faishal Athallah 1917051072 (Mendesain GUI)
