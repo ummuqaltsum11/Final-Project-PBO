@@ -61,6 +61,27 @@ Hubungan atau relasi antara entitas Cash dan Credit dengan Customer adalah inher
 ###
 ### Entity Reationship Diagram
 
+```mermaid
+erDiagram
+          CUSTOMER ||..|| CASH : is
+          CUSTOMER ||..|| CREDIT : is
+          CUSTOMER ||--|{ BARANG: "has"
+          CUSTOMER {
+            int IDcustomer
+            string nama
+            string alamat
+          }
+          CASH{
+            date tgl_pembayaran
+          }
+          CREDIT{
+            string contact
+          }
+          BARANG{
+            string jenisBuku
+            double hargaBuku
+          }
+```
 Terdapat empat buah entitas pada diagram ini, yaitu: Customer, Barang, Cash, dan Credit
 
 1. Entitas Customer memiliki beberepa atribut:
