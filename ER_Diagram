@@ -1,18 +1,22 @@
 erDiagram
-          CUSTOMER ||..|| CASH : is
-          CUSTOMER ||..|| CREDIT : is
+          CUSTOMER ||..|| CASH: is
+          CUSTOMER ||..|| CREDIT: is
           CUSTOMER ||--|{ BARANG: "has"
+          
           CUSTOMER {
             int IDcustomer
             string nama
             string alamat
           }
+          
           CASH{
             date tgl_pembayaran
           }
+          
           CREDIT{
             string contact
           }
+          
           BARANG{
             string jenisBuku
             double hargaBuku
