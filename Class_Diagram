@@ -1,7 +1,7 @@
 classDiagram
     Customer <|-- Cash
     Customer <|-- Credit
-    Customer "1"o--"*" Barang : 
+    Customer "1"o--"*" Barang: 
     
     class Customer{
       <<abstract>>
@@ -14,9 +14,11 @@ classDiagram
     class Cash{
       -Date tgl_pembayaran
     }
+    
     class Credit{
       -String contact
     }
+    
     class Barang{
       -String jenisBuku
       -double hargaBuku
