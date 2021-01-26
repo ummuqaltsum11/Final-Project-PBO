@@ -183,8 +183,8 @@ classDiagram
     }
 ```
 
-Pada desain diagram ini sama seperti diagram-diagram sebelumnya, hanya saja ada beberapa tambahan entitas,
-yaitu: DataModelTokoBuku, FormCustomerController, DBConnection, dan FormCustomer
+Pada desain diagram ini sama seperti diagram-diagram sebelumnya, yaitu: Customer, Barang, Cash, dan Credit
+Hanya saja ada beberapa tambahan entitas: DataModelTokoBuku, FormCustomerController, DBConnection, dan FormCustomer
 
 Pada entitas Customer terdapat penambahan method, yaitu: getIDcustomer(), getNama(), dangetAlamat()
 
@@ -198,7 +198,7 @@ Pada entitas Customer terdapat penambahan method, yaitu: getIDcustomer(), getNam
     - handleReloadButton(ActionEvent event)
     - initialize(URL url, ResourceBundle rb)
 
-3. Entitas DBConnection memiliki sebuah atribut:
+3. Entitas DBConnection memiliki beberapa atribut:
     - "USERNAME" bertipe data string
     - "PASSWORD" bertipe data string
     - "DB" bertipe data string
