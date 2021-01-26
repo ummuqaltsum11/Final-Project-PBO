@@ -3,7 +3,7 @@
 - Maghviraturreimadhiney 1917051021 (Mendesain Diagram)
 - Muhammad Faishal Athallah 1917051072 (Mendesain GUI)
 
-###
+#
 # Penjelasan Aplikasi Sistem Penjualan Toko Buku "SHEENA"
 ![Aplikasi](https://user-images.githubusercontent.com/62341995/105652448-d9d6f180-5eeb-11eb-9c56-56ade7fb36a3.PNG)
 ### Aplikasi ini menyediakan pelayanan untuk melakukan kegiatan transaksi jual-beli pada toko buku
