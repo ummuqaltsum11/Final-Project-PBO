@@ -10,6 +10,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+
 public class Main extends Application {
   
   @Override
@@ -17,7 +18,7 @@ public class Main extends Application {
     Parent root = FXMLLoader.load(getClass().getResource("FormCustomer.fxml"));
     
     Scene scene = new Scene(root);
-    stage.setTitle(" Aplikasi Sistem Penjualan Toko Buku Sheena");
+    stage.setTitle("Aplikasi Sistem Penjualan Toko Buku Sheena");
     stage.setScene(scene);
     stage.show();
   }
