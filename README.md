@@ -221,7 +221,7 @@ AnchorPane: Bagian tempat untuk ditambahkannya label-label dan tombol-tombol lai
 MenuBar: Tampilan beberapa menu utama yang biasanya sudah langsung tampil secara jelas setelah membuka aplikasi yang dijalankan.
 Menu: Berisi menu pilihan-pilihan setelah MenuBar.
 MenuItem: Memberikan item teks setelah Menu.
-TabPane: Hampir sama seperti AnchorPane, tetapi TabPane lebih berbentuk seperti tabel untuk berpindah dari satu lapisan ke lapisan lain (lapisan yang dimasuk ialah 1 kolom tabel).
+TabPane: Hampir sama seperti AnchorPane, tetapi TabPane lebih berbentuk seperti tabel untuk berpindah dari satu lapisan ke lapisan lain (lapisan yang dimaksud ialah 1 kolom tabel).
 Tab: Tampilan teks dalam TabPane, yang dimana dalam Tab ini nantinya akan menjadi tempat bagi fitur-fitur lainnya juga dalam aplikasi.
 TextField: Untuk memasukkan teks pada tabel kolom yang biasanya digunakan untuk inputan data pada aplikasi.
 DataPicker: Untuk menampilkan kalender waktu hari, bulan, dan tahun.
