@@ -3,7 +3,8 @@ erDiagram
           CUSTOMER ||..|| CREDIT : is
           CUSTOMER ||--|{ BARANG : "has"
           
-          CUSTOMER {
+          
+          CUSTOMER{
             int IDcustomer
             string nama
             string alamat
