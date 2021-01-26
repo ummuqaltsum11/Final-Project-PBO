@@ -1,3 +1,9 @@
+# Nama Anggota:
+- Ummu Qaltsum 1917051008 (Menulis Program)
+- Maghviraturreimadhiney 1917051021 (Mendesain Diagram)
+- Muhammad Faishal Athallah 1917051072 (Mendesain GUI)
+
+###
 # Penjelasan Aplikasi Sistem Penjualan Toko Buku "SHEENA"
 ![Aplikasi](https://user-images.githubusercontent.com/62341995/105652448-d9d6f180-5eeb-11eb-9c56-56ade7fb36a3.PNG)
 ### Aplikasi ini menyediakan pelayanan untuk melakukan kegiatan transaksi jual-beli pada toko buku
@@ -14,12 +20,6 @@ Di sebelah kanan bawah terdapat form untuk menginputkan data buku yang dibeli.
 Ketika ada pelanggan yang sama membeli lebih dari satu buku, cukup menekan data pelanggan tersebut pada tabel di sebelah kanan atas,
 lalu akan muncul ID pelanggan tersebut di kolom pengisian bagian kanan bawah, kasir hanya perlu mengisikan jenis buku dan harga buku yang ingin ditambahkan.
 Kemudian data tersebut akan muncul pada tabel di bagian tengah bawah.
-
-###
-### Nama Anggota :
-- Ummu Qaltsum 1917051008 (Menulis Program)
-- Maghviraturreimadhiney 1917051021 (Mendesain Diagram)
-- Muhammad Faishal Athallah 1917051072 (Mendesain GUI)
 
 ###
 ### Class Diagram
@@ -53,7 +53,7 @@ Kemudian data tersebut akan muncul pada tabel di bagian tengah bawah.
           +double getHargaBuku()
         }
 ```
-Terdapat empat buah entitas pada diagram ini, yaitu: Customer, Barang, Cash, dan Credit
+Terdapat empat buah entitas pada diagram ini, yaitu: Customer, Barang, Cash, dan Credit.
 
 1. Entitas Customer memiliki beberepa atribut:
     - "IDcustomer" yang bertipe data integer sebagai Primary Key
@@ -97,7 +97,7 @@ erDiagram
             double hargaBuku
           }
 ```
-Terdapat empat buah entitas pada diagram ini, yaitu: Customer, Barang, Cash, dan Credit
+Terdapat empat buah entitas pada diagram ini, yaitu: Customer, Barang, Cash, dan Credit.
 
 1. Entitas Customer memiliki beberepa atribut:
     - "IDcustomer" bertipe data integer
@@ -183,8 +183,8 @@ classDiagram
     }
 ```
 
-Pada desain diagram ini sama seperti diagram-diagram sebelumnya, yaitu: Customer, Barang, Cash, dan Credit
-Hanya saja ada beberapa tambahan entitas: DataModelTokoBuku, FormCustomerController, DBConnection, dan FormCustomer
+Pada desain diagram ini sama seperti diagram-diagram sebelumnya, yaitu: Customer, Barang, Cash, dan Credit. 
+Hanya saja ada beberapa tambahan entitas: DataModelTokoBuku, FormCustomerController, DBConnection, dan FormCustomer.
 
 Pada entitas Customer terdapat penambahan method, yaitu: getIDcustomer(), getNama(), dangetAlamat()
 
