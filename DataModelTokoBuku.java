@@ -79,7 +79,7 @@ public class DataModelTokoBuku {
       ResultSet rs = conn.createStatement().executeQuery(sql);
       while (rs.next()){
         String sqlBarang = "SELECT jenisBuku, hargaBuku "
-              + "FROM barang WHERE IDcustomer="+ rs.getInt(1);
+              + "FROM barang WHERE IDcustomer = "+ rs.getInt(1);
         ResultSet rsBarang = conn.createStatement().executeQuery(sqlBarang);
         ArrayList<Barang> dataBarang = new ArrayList<>();
         while (rsBarang.next()){
@@ -102,7 +102,7 @@ public class DataModelTokoBuku {
       ResultSet rs = conn.createStatement().executeQuery(sql);
       while (rs.next()){
         String sqlBarang = "SELECT jenisBuku, hargaBuku "
-              + "FROM barang WHERE IDcustomer=" + rs.getInt(1);
+              + "FROM barang WHERE IDcustomer = " + rs.getInt(1);
         ResultSet rsBarang = conn.createStatement().executeQuery(sqlBarang);
         ArrayList<Barang> dataBarang = new ArrayList<>();
         while (rsBarang.next()) {
@@ -119,7 +119,7 @@ public class DataModelTokoBuku {
   public ObservableList<Barang> getnBarang(int IDcustomer){
     ObservableList<Barang> data = FXCollections.observableArrayList();
     String sql = "SELECT jenisBuku, hargaBuku "
-              + "FROM barang WHERE IDcustomer=" + IDcustomer;
+              + "FROM barang WHERE IDcustomer = " + IDcustomer;
     try {
       ResultSet rs = conn.createStatement().executeQuery(sql);
       while (rs.next()){
@@ -148,6 +148,6 @@ public class DataModelTokoBuku {
     statCustomer.setString(2, brg.getJenisBuku());
     statCustomer.setDouble(3, brg.getHargaBuku());
     statCustomer.execute();
-    
   }
 }
+
