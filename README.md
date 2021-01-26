@@ -4,7 +4,7 @@
 - Muhammad Faishal Athallah 1917051072 (Mendesain GUI)
 
 #
-# Penjelasan Aplikasi Sistem Penjualan Toko Buku "SHEENA"
+## Penjelasan Aplikasi Sistem Penjualan Toko Buku "SHEENA"
 ![Aplikasi](https://user-images.githubusercontent.com/62341995/105652448-d9d6f180-5eeb-11eb-9c56-56ade7fb36a3.PNG)
 ### Aplikasi ini menyediakan pelayanan untuk melakukan kegiatan transaksi jual-beli pada toko buku
 Aplikasi ini juga dapat menjadi bukti pembelian, karena data dari transaksi yang telah dilakukan akan disimpan ke dalam database toko.
@@ -214,3 +214,18 @@ Hubungan atau relasi antara entitas DataModelTokoBuku dengan DBConnection adalah
 relasi ini memiliki arti supaya dapat mengakses DataModelTokoBuku maka dilakukan interaksi dengan DBConnection terlebih dahulu.
 Hubungan atau relasi antara entitas FormCustomer dengan FormCustomerController adalah dependency, 
 dimana pengoperasian dari FormCustomer bergantung pada FormCustomerController.
+
+###
+### Simbol pada "JavaFx Scene Builder"
+AnchorPane: Bagian tempat untuk ditambahkannya label-label dan tombol-tombol lainnya.
+MenuBar: Tampilan beberapa menu utama yang biasanya sudah langsung tampil secara jelas setelah membuka aplikasi yang dijalankan.
+Menu: Berisi menu pilihan-pilihan setelah MenuBar.
+MenuItem: Memberikan item teks setelah Menu.
+TabPane: Hampir sama seperti AnchorPane, tetapi TabPane lebih berbentuk seperti tabel untuk berpindah dari satu lapisan ke lapisan lain (lapisan yang dimasuk ialah 1 kolom tabel).
+Tab: Tampilan teks dalam TabPane, yang dimana dalam Tab ini nantinya akan menjadi tempat bagi fitur-fitur lainnya juga dalam aplikasi.
+TextField: Untuk memasukkan teks pada tabel kolom yang biasanya digunakan untuk inputan data pada aplikasi.
+DataPicker: Untuk menampilkan kalender waktu hari, bulan, dan tahun.
+Button: Tombol yang nantinya ketika diklik akan mengeluarkan suatu proses/berjalannya program aplikasi pada tujuan tertentu.
+Label: Pemberian label/teks utama yang ditampilkan pada layar monitor aplikasi.
+TableView: Untuk melihat beberapa tampilan tabel yang akan digunakan untuk penginputan pada aplikasi.
+TableColumn: Tabel berbentuk kolom secara terpisah untuk inputan teks.
