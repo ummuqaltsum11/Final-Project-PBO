@@ -1,7 +1,7 @@
 erDiagram
-          CUSTOMER ||..|| CASH: is
-          CUSTOMER ||..|| CREDIT: is
-          CUSTOMER ||--|{ BARANG: "has"
+          CUSTOMER ||..|| CASH : is
+          CUSTOMER ||..|| CREDIT : is
+          CUSTOMER ||--|{ BARANG : "has"
           
           CUSTOMER {
             int IDcustomer
