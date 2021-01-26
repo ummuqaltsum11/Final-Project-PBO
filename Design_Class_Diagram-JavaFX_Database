@@ -2,10 +2,12 @@ classDiagram
     Customer <|-- Cash
     Customer <|-- Credit
     Customer "1"o--"*" Barang : 
+    
     Customer --o DataModelTokoBuku : 
     DataModelTokoBuku <-- FormCustomerController : Data Control
     DataModelTokoBuku --> DBConnection : DB Connection
     FormCustomerController <.. FormCustomer : Form Control      
+
 
     class Customer{
       <<abstract>>
@@ -15,7 +17,6 @@ classDiagram
       getIDcustomer()
       getNama()
       getAlamat()
-      
     }
     
     class Cash{
@@ -24,7 +25,6 @@ classDiagram
     
     class Credit{
       -StringProperty contact
-      
     }
     
     class Barang{
